@@ -1,7 +1,7 @@
 import React from "react";
 import "./global.css";
-import { HelloContext } from "./components/hello-context";
+import { HelloRef } from "./components/hello-ref";
 
 export function App() {
-  return <HelloContext />;
+  return <HelloRef />;
 }
