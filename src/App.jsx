@@ -1,7 +1,7 @@
 import React from "react";
 import "./global.css";
-import { HelloRef } from "./components/hello-ref";
+import { HelloMemo } from "./components/memo/hello-memo";
 
 export function App() {
-  return <HelloRef />;
+  return <HelloMemo />;
 }
