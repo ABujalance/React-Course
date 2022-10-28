@@ -1,7 +1,13 @@
 import React from "react";
 import "./global.css";
-import { HelloMemo } from "./components/memo/hello-memo";
-
+import { HelloContext } from "./components/hello-context";
+import { HelloCheckbox } from "./components/hello-checkbox";
+import { HelloForm } from "./components/hello-form";
 export function App() {
-  return <HelloMemo />;
+  return (
+    <HelloContext>
+      <HelloCheckbox />
+      <HelloForm />
+    </HelloContext>
+  );
 }
