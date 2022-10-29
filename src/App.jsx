@@ -1,15 +1,12 @@
 import React from "react";
 import "./global.css";
-import { AppContext } from "./App-context";
-import { HelloCheckbox } from "./components/hello-checkbox";
-import { HelloForm } from "./components/hello-form";
-import { HelloCounter } from "./components/hello-counter";
+import { HelloList } from "./components/hello-list";
+import { HelloWorld } from "./components/hello-world";
 export function App() {
   return (
-    <AppContext>
-      <HelloCheckbox />
-      <HelloForm />
-      <HelloCounter />
-    </AppContext>
+    <>
+      <HelloWorld />
+      <HelloList />
+    </>
   );
 }
