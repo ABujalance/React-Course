@@ -1,7 +1,7 @@
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import { ApplicationContext } from "../App-context";
 
-export const HelloCounter = () => {
+export const HelloCounter = memo(() => {
   const [state, dispatch] = useContext(ApplicationContext);
   const { count } = state;
 
@@ -15,4 +15,4 @@ export const HelloCounter = () => {
       <button onClick={handleClick}>count</button>
     </>
   );
-};
+});
